@@ -66,7 +66,7 @@ class Parser(object):
         resp = resp[:(end)]
         
         # replace unwanted parts
-        resp = resp.replace("<br/>", "")
+        resp = resp.replace("<br/>", "\n")
         resp = resp.replace("</p>", "")
         resp = resp.replace("<p>", "\n")
         
